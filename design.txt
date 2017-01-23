@@ -1,0 +1,12 @@
+Design
+My project is similar to many other photo editors.
+
+Code
+Photo Lab is a photo editor and has 12 filters. To write these filters, I first change the given image into a list of RGB and then looping through the image and change the RGB according to user’s choice of filter. 
+The most important filters of my project are Oil Paint and Sketch. To write Oil Paint, I use something similar to floodfill to find adjacent similar colors and change them to their average color. Because of overflow, I have to make the image into multiple parts and loop over every part. So the effect loos a little like mosaic.
+To write Sketch, I first convert the image to greyscale and find adjacent pixels that have  colors that are very different and change it to black.  
+
+UI
+In opening screen, the users can choose to open a help screen, start editing or exit Photo Lab. If users choose to open the help screen, they can also click on gallery and enter the gallery to see some images modified by Photo Lab. When they put the mouse on the image, they can see the filter used on the right to left of the window. Users can click back to go back to opening screen. If the users click on exit, the window will be closed. 
+When users go into the editing window, they will see a toolbox on the left of the screen. They can load an image and modify it and then save the modified image to their computer. 
+
